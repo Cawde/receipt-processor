@@ -24,7 +24,7 @@ This application is a backend service that processes receipt data and awards poi
 - Body: Receipt JSON object
 - Response: JSON containing a unique ID for the receipt
 - Example Request:
-```json{
+json{
   "retailer": "Target",
   "purchaseDate": "2022-01-01",
   "purchaseTime": "13:01",
@@ -40,12 +40,12 @@ This application is a backend service that processes receipt data and awards poi
   ],
   "total": "18.74"
   }
-  ```
+
 
 - Example Response:
-```json{
+json{
   "id": "a42fd5b8-7f0e-4c42-93c9-2c877a5053cf"
-}```
+}
 
 ### Point Calculation
 
@@ -53,9 +53,9 @@ This application is a backend service that processes receipt data and awards poi
 - Method: GET
 - Response: JSON containing the number of points awarded
 - Example Response:
-```json{
+json{
   "points": 28
-}```
+}
 
 
 # Rules
