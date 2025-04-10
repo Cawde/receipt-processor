@@ -103,10 +103,8 @@ Docker's documentation can be found here: https://docs.docker.com/manuals/
 
 ### Run the container:
 ``` docker run -p 3000:3000 receipt-processor ``` 
-If you changed the port: ```docker run -p {PORT}:{PORT} receipt-processor```
-{PORT} = whatever you changed the port to.
-Ex. PORT = 8000
-``` docker run -p 8000:8000 receipt-processor ``` 
+If you changed the port or wanted to use different ports: ```docker run -p {host-port}:{container-port} receipt-processor```
+
 
 To run in detached mode (in the background):
 docker run -d -p 3000:3000 receipt-processor
