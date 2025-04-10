@@ -1,6 +1,6 @@
 # Receipt Processor API
 ## Overview
-This application is a backend service that processes receipt data and awards points based on specific rules. It provides two main endpoints to process receipts and calculate points according to a defined set of criteria.
+This application is a backend service that processes receipt data and awards points based on rules provided by the challenge.
 
 
 ## Features
@@ -95,6 +95,8 @@ The API will be available at http://localhost:3000
 However this can easily be changed by modifying the PORT variable in src/app.js
 
 ## Running with Docker
+Docker can be installed here: https://www.docker.com/get-started/
+Docker's documentation can be found here: https://docs.docker.com/manuals/
 
 ### Build the Docker image:
 docker build -t receipt-processor .
