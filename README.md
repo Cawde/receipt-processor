@@ -24,28 +24,32 @@ This application is a backend service that processes receipt data and awards poi
 - Body: Receipt JSON object
 - Response: JSON containing a unique ID for the receipt
 - Example Request:
-json{
-  "retailer": "Target",
-  "purchaseDate": "2022-01-01",
-  "purchaseTime": "13:01",
-  "items": [
-    {
-      "shortDescription": "Mountain Dew 12PK",
-      "price": "6.49"
-    },
-    {
-      "shortDescription": "Emils Cheese Pizza",
-      "price": "12.25"
+  ```
+  json{
+    "retailer": "Target",
+    "purchaseDate": "2022-01-01",
+    "purchaseTime": "13:01",
+    "items": [
+      {
+        "shortDescription": "Mountain Dew 12PK",
+        "price": "6.49"
+      },
+      {
+        "shortDescription": "Emils Cheese Pizza",
+        "price": "12.25"
+      }
+    ],
+    "total": "18.74"
     }
-  ],
-  "total": "18.74"
-  }
+  ```
 
 
 - Example Response:
-json{
-  "id": "a42fd5b8-7f0e-4c42-93c9-2c877a5053cf"
-}
+```
+  json{
+    "id": "a42fd5b8-7f0e-4c42-93c9-2c877a5053cf"
+  }
+```
 
 ### Point Calculation
 
@@ -111,7 +115,8 @@ Send a POST request to http://localhost:3000/receipts/process with a receipt JSO
 Copy the ID from the response
 Send a GET request to http://localhost:3000/receipts/{id}/points to get the points
 
-Project Structure
+## Project Structure
+```
 receipt-processor/
 ├── src/
 │   ├── app.js                      # Main application file
@@ -124,6 +129,7 @@ receipt-processor/
 ├── Dockerfile
 ├── package.json
 └── README.md
+```
 
 # Note
 This application uses in-memory storage, so data will be lost when the server restarts.
