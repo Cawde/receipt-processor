@@ -24,8 +24,10 @@ This application is a backend service that processes receipt data and awards poi
 - Body: Receipt JSON object
 - Response: JSON containing a unique ID for the receipt
 - Example Request:
+  
+###json
   ```
-  json{
+  {
     "retailer": "Target",
     "purchaseDate": "2022-01-01",
     "purchaseTime": "13:01",
@@ -45,8 +47,9 @@ This application is a backend service that processes receipt data and awards poi
 
 
 - Example Response:
+###json
 ```
-  json{
+  {
     "id": "a42fd5b8-7f0e-4c42-93c9-2c877a5053cf"
   }
 ```
@@ -57,8 +60,9 @@ This application is a backend service that processes receipt data and awards poi
 - Method: GET
 - Response: JSON containing the number of points awarded
 - Example Response:
+###json
 ```
-json{
+{
   "points": 28
 }
 ```
@@ -119,22 +123,6 @@ You can test the API using Postman (my preference) or any API testing tool:
 Send a POST request to http://localhost:3000/receipts/process with a receipt JSON
 Copy the ID from the response
 Send a GET request to http://localhost:3000/receipts/{id}/points to get the points
-
-## Project Structure
-```
-receipt-processor/
-├── src/
-│   ├── app.js                      # Main application file
-│   ├── routes/
-│   │   └── receiptRoutes.js        # API route definitions
-│   └── services/
-│       └── pointsCalculationService.js  # Points calculation logic
-├── .dockerignore
-├── .gitignore
-├── Dockerfile
-├── package.json
-└── README.md
-```
 
 # Note
 This application uses in-memory storage, so data will be lost when the server restarts.
