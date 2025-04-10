@@ -99,11 +99,14 @@ Docker can be installed here: https://www.docker.com/get-started/
 Docker's documentation can be found here: https://docs.docker.com/manuals/
 
 ### Build the Docker image:
-docker build -t receipt-processor .
+``` docker build -t receipt-processor . ```
 
 ### Run the container:
-docker run -p 3000:3000 receipt-processor
-Or if you changed the port: docker run -p {PORT}:{PORT} receipt-processor
+``` docker run -p 3000:3000 receipt-processor ``` 
+If you changed the port: ```docker run -p {PORT}:{PORT} receipt-processor```
+{PORT} = whatever you changed the port to.
+Ex. PORT = 8000
+``` docker run -p 8000:8000 receipt-processor ``` 
 
 To run in detached mode (in the background):
 docker run -d -p 3000:3000 receipt-processor
