@@ -57,9 +57,11 @@ This application is a backend service that processes receipt data and awards poi
 - Method: GET
 - Response: JSON containing the number of points awarded
 - Example Response:
+```
 json{
   "points": 28
 }
+```
 
 
 # Rules
