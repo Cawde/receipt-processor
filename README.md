@@ -25,8 +25,7 @@ This application is a backend service that processes receipt data and awards poi
 - Response: JSON containing a unique ID for the receipt
 - Example Request:
   
-###json
-  ```
+```
   {
     "retailer": "Target",
     "purchaseDate": "2022-01-01",
@@ -47,7 +46,7 @@ This application is a backend service that processes receipt data and awards poi
 
 
 - Example Response:
-###json
+
 ```
   {
     "id": "a42fd5b8-7f0e-4c42-93c9-2c877a5053cf"
@@ -86,14 +85,14 @@ This application is a backend service that processes receipt data and awards poi
 Node.js (v14+)
 Docker (for containerized deployment)
 
-Running with Node.js
+## Running with Node.js
 
 Clone the repository
 Install dependencies:
-npm install
+```npm install```
 
 Start the server:
-node src/app.js
+```node src/app.js```
 
 The API will be available at http://localhost:3000
 However this can easily be changed by modifying the PORT variable in src/app.js
