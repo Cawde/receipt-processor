@@ -126,7 +126,7 @@ Send a GET request to http://localhost:3000/receipts/{id}/points to get the poin
 ## Unit Testing
 Tests were created using Jest in the ```___test___``` directory
 
-## How to run:
+## How to run tests:
 ``` npm test ```
 
 # Note
