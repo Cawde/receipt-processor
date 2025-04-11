@@ -111,19 +111,12 @@ Send a POST request to http://localhost:3000/receipts/process with a receipt JSO
 Copy the ID from the response
 Send a GET request to http://localhost:3000/receipts/{id}/points to get the points
 
-Project Structure
-receipt-processor/
-├── src/
-│   ├── app.js                      # Main application file
-│   ├── routes/
-│   │   └── receiptRoutes.js        # API route definitions
-│   └── services/
-│       └── pointsCalculationService.js  # Points calculation logic
-├── .dockerignore
-├── .gitignore
-├── Dockerfile
-├── package.json
-└── README.md
+
+## Unit Testing
+Tests were created using Jest in the ```___test___``` directory
+
+#How to run:
+``` npm test ```
 
 # Note
 This application uses in-memory storage, so data will be lost when the server restarts.
